@@ -85,3 +85,15 @@ html{
     background:rgba(92, 78, 78, 0.3);
 
 }
+
+
+.reveal{
+    opacity:0;
+    transform:translateY(50px);
+    transition:0.5s ease-out;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
