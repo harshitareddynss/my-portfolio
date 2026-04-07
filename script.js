@@ -16,3 +16,22 @@ window.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", reveal);
     reveal(); // run once on load
 });
+
+function scrollToProjects() {
+    document.getElementById("projects").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+let text = "I design & build beautiful web experiences";
+let index = 0;
+
+function typeEffect() {
+    if (index < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 50);
+    }
+}
+
+typeEffect();

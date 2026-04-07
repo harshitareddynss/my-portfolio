@@ -8,9 +8,12 @@
 </head>
 <body>
     <!-- My hero section-->
-     <section id="hero" class="hero">
+     <section id="home" class="hero">
+        <div class="hero-content">
      <h1>Hi,I'm Nambala Sri Satya Harshita Reddy</h1>
-     <p>I design & build beautiful web experiences</p>
+     <p class="tagline" id="typing">I design & build beautiful web experiences</p>
+     <button class="hero-btn" onclick="scrollToProjects()">View My Work</button>
+        </div>
      </section>
     <!--My About section-->
      <section id="about" class="about reveal">
@@ -23,10 +26,12 @@
         <div class="project-card">
             <h3>Portfolio Website</h3>
             <p>A responsive portfolio website showcasing my work and skills.</p>
+            <button>View Project</button>
         </div>
         <div class="project-card">
-            <h3>To-Do App</h3>
-            <p>A simple task management application using JavaScript</p>
+            <h3>FixIt website</h3>
+            <p>A simple household risk assessment manager</p>
+            <button>View Project</button>
         </div>
        
      </section>
@@ -39,7 +44,7 @@
     <nav class="navbar">
         <h2 class="logo">Harshita's Portfolio</h2>
         <ul>
-            <li><a href="#hero">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>

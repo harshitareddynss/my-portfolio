@@ -74,11 +74,12 @@ html{
     border-radius: 15px;
     color:white;
     transition:0.3s;
+    border: 1px solid rgba(255,255,255,0.2);
 }
 
 .project-card:hover{
-    transform:scale(1.05);
-    border:1px solid rgba(255,255,255,0.2);
+    transform:translateY(-10px);
+    box-shadow: 0 0 20px rgba(0,198,255,0.5); 
 }
 
 .about,.projects,.contact{
@@ -97,3 +98,55 @@ html{
     opacity:1;
     transform:translateY(0);
 }
+
+button{
+    padding:8px 15px;
+    border:none;
+    background:#00c6ff;
+    color:rgb(28, 27, 27);
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+    margin-top:10px;
+}
+
+button:hover{
+   background:white;
+}
+
+
+.tagline {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.tagline{
+    margin-top: 10px;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+.hero-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #00c6ff;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: white;
+}
+
+#typing::after {
+    content: "|";
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
