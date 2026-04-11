@@ -46,7 +46,7 @@ typeEffect();
 function openProject(project) {
     if (project === "portfolio") {
         alert("Opening Portfolio project!");
-       window.open("https://github.com/harshitareddynss/my-portfolio")
+       window.open("https://harshitareddynss.github.io/my-portfolio/")
     } 
     else if (project === "FixIt") {
         alert("Opening FixIt!");
