@@ -11,27 +11,79 @@
      <section id="home" class="hero">
         <div class="hero-content">
      <h1>Hi,I'm Nambala Sri Satya Harshita Reddy</h1>
-     <p class="tagline" id="typing">I design & build beautiful web experiences</p>
+     <p class="tagline" id="typing"></p>
      <button class="hero-btn" onclick="scrollToProjects()">View My Work</button>
         </div>
      </section>
+
     <!--My About section-->
      <section id="about" class="about reveal">
         <h2>About Me</h2>
-        <p>I'm a student passionate about web development and UI/UX design</p>
+        <p class="about-introduction">
+            I'm a student passionate about web development and UI/UX design
+        </p>
+        <p class="about-details">
+            I'm Nambala Sri Satya Harshita Reddy,a student passionate about Full
+             Stack Development with strong interest in UI/Ux design.
+            I enjoy building web applications from designing intuitive user interfaces 
+            to developing efficient backend functionality.
+        </p>
+            <p class="about-details">
+            I have hands-on experience in HTML,CSS,and JavaScript,
+             and I'm expanding my knwoledge in both frontend and backend technolgies by working on real-world projects.
+               </p>
+           <p class="about-details">
+            During my UI/UX internship at Cognifyz Technolgies,I focused on creating 
+            user-friendly interfaces,improving user flows,and designing responsive UI screens using Figma.
+            </p>
+            <p class="about-details">
+            I'm also exploring backend tecnologies and database concepts to strengthen
+             full stack development capabilities.
+            I am highly motivated,and always eager to explore new technolgies.
+            My goal is to become a skilled full stack developer who builds impactful and visually appealing digital solutions.
+        </p>
+
      </section>
+
+     <section id="experience" class="experience reveal">
+            <h2>Experience</h2>
+            <div class="exp-card">
+                <h3>UI/UX Design Intern</h3>
+                <p><strong>Cognifyz Technologies</strong></p>
+                <p class="exp-desc">Worked on designing user-friendly interfaces and improving user experience.</p>
+
+                <ul>
+                    <li>Designed responsive UI screens</li>
+                    <li>Worked with Figma</li>
+                    <li>Improved User Flow</li>
+                </ul>
+            </div>
+        </section>
+
+        
+
+    <!--My Skills section-->
+     <section id="skills" class="skills reveal">
+    <h2>My Skills</h2>
+    <div class="skill-card">HTML</div>
+    <div class="skill-card">CSS</div>
+    <div class="skill-card">JavaScript</div>
+    <div class="skill-card">UI/UX Design</div>
+    <div class="skill-card">Figma</div>
+     </section>
+
      <!--My Projects section-->
      <section id="projects" class="projects reveal">
         <h2>My Projects</h2>
         <div class="project-card">
             <h3>Portfolio Website</h3>
             <p>A responsive portfolio website showcasing my work and skills.</p>
-            <button>View Project</button>
+            <button onclick="openProject('portfolio')">View Project</button>
         </div>
         <div class="project-card">
             <h3>FixIt website</h3>
             <p>A simple household risk assessment manager</p>
-            <button>View Project</button>
+            <button onclick="openProject('FixIt')">View Project</button>
         </div>
        
      </section>
@@ -48,8 +100,11 @@
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#experience">Experience</a></li>
         </ul>
         </nav>
+
+        
         <script src="script.js"></script>
         </body>
         </html>

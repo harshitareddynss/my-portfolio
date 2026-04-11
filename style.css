@@ -51,9 +51,9 @@ html{
     color:white;
     text-align:center;
     height:80vh;
+   
     display:flex;
-    flex-direction:coloumn;
-    justify-content:center;
+    
 }
 
 .hero h1{
@@ -82,7 +82,7 @@ html{
     box-shadow: 0 0 20px rgba(0,198,255,0.5); 
 }
 
-.about,.projects,.contact{
+.about,.projects,.contact,.experience{
     background:rgba(92, 78, 78, 0.3);
 
 }
@@ -119,26 +119,29 @@ button:hover{
     margin-top: 10px;
     font-size: 1.1rem;
     opacity: 0.8;
+    display: block;
 }
 
-.tagline{
-    margin-top: 10px;
-    font-size: 1.1rem;
-    opacity: 0.8;
+#typing {
+    display: inline-block;
+    white-space: nowrap;
 }
 .hero-btn {
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 12px 28px;   
     border: none;
-    border-radius: 10px;
-    background: #00c6ff;
-    color: black;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    font-weight: 600;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
 }
 
 .hero-btn:hover {
-    background: white;
+    transform: translateY(-2px);
+    background:#00c6ff
 }
 
 #typing::after {
@@ -149,4 +152,129 @@ button:hover{
 @keyframes blink {
     50% { opacity: 0; }
 }
+
+.skills {
+    text-align: center;
+}
+
+.skill-card {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+}
+
+.skill-card:hover {
+    background: #f4f5f5;
+    color: black;
+}
+
+.hero-content {
+    width: 100%;              
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero {
+   
+    justify-content: center;
+    align-items: center;
+}
+
+.experience{
+    text-align:center;
+    padding :60px 20px;
+}
+
+.exp-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+.exp-card ul li::before {
+    content: "•";
+    color: #00c6ff;
+    margin-right: 10px;
+}
+.exp-card h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.exp-card p {
+    margin: 8px 0;
+}
+
+.exp-card ul li {
+    margin: 5px 0;
+}
+.exp-desc{
+    margin-top:10px;
+    opacity:0.8;
+}
+.exp-card {
+    margin: 30px auto;
+    padding: 30px;
+    width: 60%;
+    max-width: 600px;
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+
+    border-radius: 15px;
+
+    
+}
+.exp-card h3{
+    color:#00c6ff;
+}
+
+.about p {
+    margin: 15px 0;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about h2 {
+    margin-bottom: 15px;
+}
+
+.about p:first-of-type {
+    font-weight: 500;
+}
+.about {
+    max-width: 800px;
+    margin: auto;
+    padding: 0px 20px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 12px;
+}
+
+.about p {
+    text-align: left;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+.about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 

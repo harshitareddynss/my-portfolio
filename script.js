@@ -27,11 +27,40 @@ let text = "I design & build beautiful web experiences";
 let index = 0;
 
 function typeEffect() {
+    let element = document.getElementById("typing");
+
+    if (index === 0) {
+        element.innerHTML = ""; // clear first
+    }
+
     if (index < text.length) {
-        document.getElementById("typing").innerHTML += text.charAt(index);
+        element.innerHTML += text.charAt(index);
         index++;
         setTimeout(typeEffect, 50);
     }
 }
 
 typeEffect();
+
+
+function openProject(project) {
+    if (project === "portfolio") {
+        alert("Opening Portfolio project!");
+       window.open("https://github.com/harshitareddynss/my-portfolio")
+    } 
+    else if (project === "FixIt") {
+        alert("Opening FixIt!");
+        window.open("https://harshitareddynss.github.io/FixIt/")
+    }
+}
+
+window.addEventListener("scroll", () => {
+    document.querySelectorAll(".reveal").forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+            el.classList.add("active");
+        }
+    });
+});
+
+
