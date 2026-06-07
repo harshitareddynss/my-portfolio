@@ -3,108 +3,456 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY PORTFOLIO</title>
+
+    <title>Harshita Reddy | Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- My hero section-->
-     <section id="home" class="hero">
-        <div class="hero-content">
-     <h1>Hi,I'm Nambala Sri Satya Harshita Reddy</h1>
-     <p class="tagline" id="typing"></p>
-     <button class="hero-btn" onclick="scrollToProjects()">View My Work</button>
-        </div>
-     </section>
 
-    <!--My About section-->
-     <section id="about" class="about reveal">
-        <h2>About Me</h2>
-        <p class="about-introduction">
-            I'm a student passionate about web development and UI/UX design
-        </p>
-        <p class="about-details">
-            I'm Nambala Sri Satya Harshita Reddy,a student passionate about Full
-             Stack Development with strong interest in UI/Ux design.
-            I enjoy building web applications from designing intuitive user interfaces 
-            to developing efficient backend functionality.
-        </p>
-            <p class="about-details">
-            I have hands-on experience in HTML,CSS,and JavaScript,
-             and I'm expanding my knwoledge in both frontend and backend technolgies by working on real-world projects.
-               </p>
-           <p class="about-details">
-            During my UI/UX internship at Cognifyz Technolgies,I focused on creating 
-            user-friendly interfaces,improving user flows,and designing responsive UI screens using Figma.
-            </p>
-            <p class="about-details">
-            I'm also exploring backend tecnologies and database concepts to strengthen
-             full stack development capabilities.
-            I am highly motivated,and always eager to explore new technolgies.
-            My goal is to become a skilled full stack developer who builds impactful and visually appealing digital solutions.
-        </p>
+    <!-- ================= NAVBAR ================= -->
 
-     </section>
-
-     <section id="experience" class="experience reveal">
-            <h2>Experience</h2>
-            <div class="exp-card">
-                <h3>UI/UX Design Intern</h3>
-                <p><strong>Cognifyz Technologies</strong></p>
-                <p class="exp-desc">Worked on designing user-friendly interfaces and improving user experience.</p>
-
-                <ul>
-                    <li>Designed responsive UI screens</li>
-                    <li>Worked with Figma</li>
-                    <li>Improved User Flow</li>
-                </ul>
-            </div>
-        </section>
-
-        
-
-    <!--My Skills section-->
-     <section id="skills" class="skills reveal">
-    <h2>My Skills</h2>
-    <div class="skill-card">HTML</div>
-    <div class="skill-card">CSS</div>
-    <div class="skill-card">JavaScript</div>
-    <div class="skill-card">UI/UX Design</div>
-    <div class="skill-card">Figma</div>
-     </section>
-
-     <!--My Projects section-->
-     <section id="projects" class="projects reveal">
-        <h2>My Projects</h2>
-        <div class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>A responsive portfolio website showcasing my work and skills.</p>
-            <button onclick="openProject('portfolio')">View Project</button>
-        </div>
-        <div class="project-card">
-            <h3>FixIt website</h3>
-            <p>A simple household risk assessment manager</p>
-            <button onclick="openProject('FixIt')">View Project</button>
-        </div>
-       
-     </section>
-     <!--My contact section-->
-     <section id="contact" class="contact reveal">
-        <h2>Contact Me</h2>
-        <p>Email:harshitareddynss@gmail.com</p>
-        <p>Mobile:9030251103</p>
-     </section>
     <nav class="navbar">
-        <h2 class="logo">Harshita's Portfolio</h2>
-        <ul>
-            <li><a href="#home">Home</a></li>
+        <ul class="nav-links">
             <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#experience">Experience</a></li>
         </ul>
-        </nav>
+    </nav>
 
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="status-badge">
+            ✦ Available for Internships
+        </div>
+
+        <div class="profile-container">
+            <img src="images/profile.jpeg" alt="Harshita Reddy">
+        </div>
+
+        <h1 class="hero-name">
+            Nambala Sri Satya Harshita Reddy
+        </h1>
+
+        <h2 class="hero-role">
+            Web Developer • Frontend Developer • UI/UX Designer
+        </h2>
+
+        <p class="hero-description">
+            Creating responsive websites and intuitive digital experiences
+            through thoughtful design and clean code.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#projects" class="btn primary-btn">
+                View Projects
+            </a>
+
+            <a href="resume.pdf" class="btn secondary-btn">
+                Download Resume
+            </a>
+
+        </div>
+
+        <div class="scroll-down">
+            ↓ Scroll
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about">
+
+        <div class="section-header">
+
+            <span>ABOUT ME</span>
+
+            <h2>
+                Designing and Building Digital Experiences
+            </h2>
+
+        </div>
+
+        <div class="about-content">
+
+            <p class="about-text">
+                I'm a passionate Web Developer, Frontend Developer,
+                and UI/UX Designer focused on creating responsive websites
+                and user-centered digital experiences. I enjoy transforming
+                ideas into functional and visually appealing solutions that
+                make a meaningful impact.
+            </p>
+
+        </div>
+
+        <div class="about-cards">
+            <div class="glass-card">
+
+                <div class="card-icon"></div>
+
+                <h3>Web Development</h3>
+
+                <p>
+                    Creating complete web solutions that combine
+                    functionality, performance, and aesthetics.
+                </p>
+
+            </div>
+
+            <div class="glass-card">
+
+                <div class="card-icon"></div>
+
+                <h3>Frontend Development</h3>
+
+                <p>
+                    Building responsive and interactive web
+                    applications using modern frontend technologies.
+                </p>
+
+            </div>
+            <div class="glass-card">
+
+                <div class="card-icon"></div>
+
+                <h3>UI/UX Design</h3>
+
+                <p>
+                    Designing intuitive interfaces, wireframes,
+                    prototypes, and seamless user experiences.
+                </p>
+
+            </div>
+
+            
+
+            
+
+        </div>
+
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+
+    <section id="experience" class="experience">
+
+        <div class="section-header">
+
+            <span>EXPERIENCE</span>
+
+            <h2>
+                Internships & Professional Experience
+            </h2>
+
+        </div>
+        <div class="glass-card experience-card">
         
-        <script src="script.js"></script>
-        </body>
-        </html>
+
+                <div class="experience-top">
+
+                    <h3>Web Development Intern</h3>
+
+                    <span>2026</span>
+
+                </div>
+
+                <h4>Cognifyz Technologies</h4>
+
+                <p>
+                    Developed responsive web pages, improved user
+                    interfaces, and collaborated on frontend
+                    development tasks using modern web technologies.
+                </p>
+
+            </div>
+                
+
+        <div class="glass-card experience-card">
+
+            
+            <div class="experience-top">
+
+                    <h3>UI/UX Design Intern</h3>
+
+                    <span>2025</span>
+
+                </div>
+
+                <h4>Cognifyz Technologies</h4>
+
+                <p>
+                    Created wireframes, prototypes, and user-centered
+                    designs while improving usability and overall
+                    user experience.
+                </p>
+
+            </div>
+
+            
+
+        </div>
+
+    </section>
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="projects">
+
+    <div class="section-header">
+
+        <span>PROJECTS</span>
+
+        <h2>Featured Projects</h2>
+
+    </div>
+
+    <div class="projects-container">
+
+        <!-- Project 1 -->
+
+        <div class="glass-card project-card">
+
+            <div class="project-content">
+
+                <h3>Learnora</h3>
+
+                <p>
+                    Alearning platform designed to help
+                    students master programming concepts through
+                    structured learning, concept reinforcement,
+                    practice exercises, and study resources.
+                </p>
+
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                     <span>TypeScript</span>
+                    <span>React</span>
+                    <span>MongoDB</span>
+                    <span>GitHub</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://learnora-project.vercel.app/">Live Demo</a>
+                    <a href="https://github.com/harshitareddynss/">GitHub</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Project 2 -->
+
+        <div class="glass-card project-card">
+
+            <div class="project-content">
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    A responsive personal portfolio showcasing
+                    projects, internships, skills, certifications,
+                    and design work.
+                </p>
+
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="#">Live Demo</a>
+                    <a href="https://github.com/harshitareddynss/">GitHub</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Project 3 -->
+
+        <div class="glass-card project-card">
+
+            <div class="project-content">
+
+                <h3>FixIt</h3>
+
+                <p>
+                    Add another strong project here with a concise
+                    description highlighting the problem solved
+                    and technologies used.
+                </p>
+
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Python</span>
+                    <span>Firebase</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://harshitareddynss.github.io/FixIt/">Live Demo</a>
+                    <a href="https://github.com/harshitareddynss/">GitHub</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= SKILLS ================= -->
+
+<section id="skills" class="skills">
+
+    <div class="section-header">
+        <span>SKILLS</span>
+        <h2>Technologies & Tools</h2>
+    </div>
+
+    <div class="skills-container">
+
+        <div class="glass-card skill-group">
+            <h3>Frontend</h3>
+
+            <div class="skill-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+            </div>
+        </div>
+
+        <div class="glass-card skill-group">
+            <h3>Programming</h3>
+
+            <div class="skill-tags">
+                <span>C</span>
+                <span>C++</span>
+                <span>Java</span>
+                <span>Python</span>
+            </div>
+        </div>
+
+        <div class="glass-card skill-group">
+            <h3>UI/UX Design</h3>
+
+            <div class="skill-tags">
+                <span>Figma</span>
+                <span>Wireframing</span>
+                <span>Prototyping</span>
+                <span>User Research</span>
+            </div>
+        </div>
+
+        <div class="glass-card skill-group">
+            <h3>Tools</h3>
+
+            <div class="skill-tags">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>VS Code</span>
+                <span>Vercel</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= CERTIFICATIONS ================= -->
+
+<section id="certifications" class="certifications">
+
+    <div class="section-header">
+        <span>CERTIFICATIONS</span>
+        <h2>Learning & Achievements</h2>
+    </div>
+
+    <div class="cert-container">
+
+        <div class="glass-card cert-card">
+            <h3>C & C++ Programming</h3>
+            <p>Certified completion of C and C++ programming training.</p>
+        </div>
+
+        <div class="glass-card cert-card">
+            <h3>JavaScript Development</h3>
+            <p>Completed JavaScript fundamentals and practical development training.</p>
+        </div>
+
+        <div class="glass-card cert-card">
+            <h3>Web Development</h3>
+            <p>Completed training covering responsive web design and development.</p>
+        </div>
+
+        <div class="glass-card cert-card">
+            <h3>UI/UX Design</h3>
+            <p>Learned user-centered design principles, wireframing and prototyping.</p>
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact">
+
+    <div class="section-header">
+        <span>CONTACT</span>
+        <h2>Let's Connect</h2>
+    </div>
+
+    <p class="contact-text">
+        I'm currently open to internships, collaborations,
+        and exciting opportunities in web development and UI/UX design.
+    </p>
+
+    <div class="contact-container">
+
+        <div class="glass-card contact-card">
+            <h3>Email</h3>
+            <a href="mailto:harshitareddynss@gmail.com">
+                harshitareddynss@gmail.com
+            </a>
+        </div>
+
+        <div class="glass-card contact-card">
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/harshitareddynss">
+                View Profile
+            </a>
+        </div>
+
+        <div class="glass-card contact-card">
+            <h3>GitHub</h3>
+            <a href="https://github.com/harshitareddynss">
+                View Projects
+            </a>
+        </div>
+
+    </div>
+
+</section>
+<footer class="footer">
+
+    <p>
+       © 2026 Nambala Sri Satya Harshita Reddy. Building Meaningful Digital Experiences.
+    </p>
+
+</footer>
+</body>
+</html>
