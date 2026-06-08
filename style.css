@@ -237,13 +237,14 @@ html{
 
 .experience-container{
     display:grid;
-    gap:30px;
+    gap:35px;
     max-width:1000px;
     margin:auto;
+
 }
 
 .experience-card{
-    padding:35px;
+    padding:40px;
 }
 
 .experience-top{
@@ -459,4 +460,29 @@ body{
         #ffffff,
         #F8F7F4
     );
+}
+.cert-btn{
+    display:inline-block;
+    margin-top:15px;
+    text-decoration:none;
+    color:white;
+    background:#D4A373;
+    padding:10px 18px;
+    border-radius:50px;
+    font-size:14px;
+}
+.cert-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap: 30px;
+}
+
+.cert-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    min-height:240px;
+     max-width:420px;
+      padding:30px;
+    margin-bottom:25px;
 }
