@@ -14,7 +14,6 @@ I am a passionate Web Developer, Frontend Developer, and UI/UX Designer with exp
 
 * HTML5
 * CSS3
-* JavaScript
 * Git & GitHub
 
 ##  Featured Projects
